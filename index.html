@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<title>AI Learning Hub</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Space+Grotesk:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .dark .invert-dark {
+      filter: invert(1)
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 dark:border-primary/30 px-4 sm:px-6 lg:px-10 py-4">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold text-black dark:text-white">AI Learning Hub</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">Courses</a>
+<a class="text-sm font-medium text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">Articles</a>
+<a class="text-sm font-medium text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary transition-colors" href="#">Community</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold transition-colors hover:bg-primary/20 dark:hover:bg-primary/30">
+<span>Log In</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold transition-opacity hover:opacity-90">
+<span>Get Started</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+<div class="w-full">
+<div class="@container">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[480px] flex-col items-center justify-center gap-6 rounded-xl bg-cover bg-center p-4 text-center" style='background-image: linear-gradient(rgba(16, 22, 34, 0.5) 0%, rgba(16, 22, 34, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuADhzLoj-FrZD3kq9lfFCJtdaH0IEMj3CUsWtIQHslWTuOSXMgwnaqffrPLKR8IA7IZmoaN8zeVP6LmnQOsqhmUEdjM13QrOSWsq7R434b5Q6m4-6SrO4VjrXpBr7RqPmsrj4nG44Uqltd5MHIUvWlUhSxAX0N-JaWHopS7vNsb_St1MN4HEOOCROTD_yNZj60t3CycdfRacB6ET2hco8u1Wf5aodXfV06C24Mpc5n7JECfptJrmEtAuPnIGbmPKFrhr-_4mjqJ3j-l");'>
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Unlock the Power of AI</h1>
+<p class="text-base text-white/80 sm:text-lg">Master artificial intelligence with our comprehensive online courses. Learn from industry experts and build real-world projects.</p>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-opacity hover:opacity-90">
+<span>Explore Courses</span>
+</button>
+</div>
+</div>
+</div>
+<div class="py-12 sm:py-16">
+<h2 class="text-2xl font-bold tracking-tight text-black dark:text-white sm:text-3xl px-4">Featured Courses</h2>
+<div class="mt-6 flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex gap-4 p-4">
+<div class="flex w-64 flex-col gap-4 rounded-lg">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwSYEuyQlwCLCy1mb2g1iIi_pApSraklKwhdyb3nLDP-kAJ5rq8OhuqY83gH6H0OMnj57F33xI4xtl8lI7-v4B7Up0ogYuZDHMGqLnHuBY6w7fLBPzXlABX-T9oRCl_hhPPnwfVZUsuxjL7nXQhZfPchLrldzTCiofCgqtuOwWzXxnjgAg12z55tnolF_zFETBctwAXLLc4pXGTas2LdZv_Hs5D4Rj1UL7uojpj0YKKoSqZK2gKCMxJwZMRRr9hpkM7ZyVRv1dHDx3");'></div>
+<div>
+<p class="font-medium text-black dark:text-white">Introduction to AI</p>
+<p class="text-sm text-black/60 dark:text-white/60">Learn the basics of artificial intelligence and its applications.</p>
+</div>
+</div>
+<div class="flex w-64 flex-col gap-4 rounded-lg">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBE2mHdCbWFaVeiJChzE62syqMR_mKXkB7H4BtbPClRUPARIETX7plU5FWxB0pAG96tw8Jr1B4jlUhaIioYZnPCzwrSEYoXZFbM4tGZAd8InhVw94r-iZMP2EQVprAj1Eq6ME_mMDfUzXZkarvZuou95YCSkSKT53QrwMWbmc1avLIR3YP6EGsYKTnxgbzUB4I3QSz9QY6NAZzPvXs38fMQoimiN8xegFtWaoE9Cgbl6nwO9zr9f4v7mVHBx7Kx20Yx75upeiO75Ah8");'></div>
+<div>
+<p class="font-medium text-black dark:text-white">Machine Learning Fundamentals</p>
+<p class="text-sm text-black/60 dark:text-white/60">Explore the core concepts of machine learning algorithms.</p>
+</div>
+</div>
+<div class="flex w-64 flex-col gap-4 rounded-lg">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3l6-rxi49vGFvbSUrnlVoRj8hCkZKD1d_x-KqRp2vaFFDhWwGNZET0I0zb9QOCp6uZh_wgz1vDERC4SH0v0Z_xyNF9-491SPignOdjk1wuobigILl8RsfTYGHg0LkMDcR1BpqwH45pKMjEvqgOHITFQd32fzuTiCF9_2XTooGjYQlMe451I-Dyt8_rH5Ebd5iLIyhZgcDAiD2s1fJQvJ273RAxzhdY7YJp9FmERiLgfiLUAcpN-IHOLGQ6Kgvxao1W5ctuonc-IAS");'></div>
+<div>
+<p class="font-medium text-black dark:text-white">Deep Learning with Neural Networks</p>
+<p class="text-sm text-black/60 dark:text-white/60">Dive into deep learning techniques and build neural networks.</p>
+</div>
+</div>
+<div class="flex w-64 flex-col gap-4 rounded-lg">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center bg-background-light dark:bg-background-dark/50 border border-primary/20 dark:border-primary/30 flex items-center justify-center">
+<span class="text-primary text-sm font-medium">More Courses</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pb-12 sm:pb-16">
+<h2 class="text-2xl font-bold tracking-tight text-black dark:text-white sm:text-3xl px-4">Latest Articles</h2>
+<div class="mt-6 grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col gap-3">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqFyn4Qquz7_htKootXGNVNQeZ_5mO2EB0LRzSjhVOPr3lf_VUeszZ74RUDtpsMXIjfCPM-2PgsSNa7G0mJGW-ArzQvAxXWl2GW4Ye97LtSk8M2kNKAbNQtgovjVhBWk58yjaRDJk36Smjdm5sceSd4UG2GQptJPMnBiaqNSz30R-n_gS2qHXq_tNOWb-afZx13YJ1vAxmFe7rRcX0C3YFKMNUOkiJeQSscTA1HNvneRPu4sAXDxpdazRWKkDd2C-Rc9_f9hwy2ypH");'></div>
+<div>
+<p class="font-medium text-black dark:text-white">The Future of AI</p>
+<p class="text-sm text-black/60 dark:text-white/60">Explore the potential impact of AI on society and technology.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCX8AO5oPR_JWEQflB9OIAQIY8jscfQzjtm-iBc92re2AHm0syF3gbCWXyNMxDOxiFDjFIjnIuf_ZkBgqPrlMSPmbCN_xe_1AJQ5_TuzNJhPYILFmx5zJFJb3jNGqaYTewPZShRoBRSupKb6XWxZl2wJ31hPnlGrUsdQpgnk09fNd_xDQYpW8K7paPt9-3dfgRtDo5RcKYqJSFghv_sZqEO4-ajVKmbKy_bb0kKxVe-utC4JxrfMEISSz7tVw_v4qKiL5lIpd3DVJJ_");'></div>
+<div>
+<p class="font-medium text-black dark:text-white">AI in Business</p>
+<p class="text-sm text-black/60 dark:text-white/60">Discover how AI is transforming various industries and business models.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full aspect-video rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4iMhlMnQE15086CE2JKFNOJ1X8GCM6aUhkMJBAhW36rjA4dN72vkhNRrzTD0CC-q8aVS4gT3X3xIE_pDxt-jl4ln8aZPNvhjBFnKyg_-qg_sZPxO0r0fRj3V-DopaeF4VvRZV9cMplQkDYXlhcjzPSoMRXKjLDejUJ1upfVTotjPZKSv4YD5bvSAm0n7zZpNSfOVTd9PIJeeJ5sI1w-otlZydbCIM2IuyDk4sRtQh9hQKqZly9k9z0-kA90NnDguxuaZEDZimQ9cV");'></div>
+<div>
+<p class="font-medium text-black dark:text-white">Ethical Considerations in AI</p>
+<p class="text-sm text-black/60 dark:text-white/60">Discuss the ethical implications and challenges of AI development.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 rounded-xl">
+<div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
+<h2 class="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">
+<span class="block">Ready to start your AI journey?</span>
+</h2>
+<div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+<div class="inline-flex rounded-lg shadow">
+<a class="inline-flex items-center justify-center rounded-lg border border-transparent bg-primary px-5 py-3 text-base font-medium text-white hover:opacity-90" href="#"> View All Courses </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-black/20 border-t border-primary/20 dark:border-primary/30">
+<div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+<div class="flex justify-center space-x-6 md:order-2">
+<a class="text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary" href="#">About Us</a>
+<a class="text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary" href="#">Contact</a>
+<a class="text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-black/60 dark:text-white/60 hover:text-primary dark:hover:text-primary" href="#">Terms of Service</a>
+</div>
+<div class="mt-8 md:order-1 md:mt-0">
+<p class="text-center text-base text-black/60 dark:text-white/60">© 2024 AI Learning Hub. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>
