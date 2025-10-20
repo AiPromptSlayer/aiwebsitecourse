@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Academy - AI Courses</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200/50 dark:border-gray-800/50">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2 text-gray-900 dark:text-white" href="#">
+<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+</svg>
+<span class="text-xl font-bold">AI Academy</span>
+</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">หน้าแรก</a>
+<a class="text-sm font-medium text-primary dark:text-primary" href="#">คอร์สเรียน</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">ผู้สอน</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">คอมมูนิตี้</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="md:hidden text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<a class="hidden md:block text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">เข้าสู่ระบบ</a>
+<a class="hidden sm:block px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold shadow-lg hover:bg-primary/90 transition-colors" href="#">ลงทะเบียน</a>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="mb-10 text-center">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2">คอร์สเรียน AI ทั้งหมด</h1>
+<p class="text-lg text-gray-600 dark:text-gray-400">สำรวจโลกแห่งปัญญาประดิษฐ์และเรียนรู้ทักษะที่จำเป็นสำหรับอนาคต</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<div class="bg-white/50 dark:bg-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMacSSctR16SZlhqOREptUfkhfgxLraJtEjEcchtWDRJRt6TCaFGrtR-YEjKih5NfxTzk5URDjFGMUvEgP3OpIHt9jqU7hHyY2lOPDpeiCqg4x-L8XNSOr5HOjUwoK1HTrGhAwmFZbAumAHWN8nx4AV6MadUfYi-UlUirmDndQBPBLYXBZ3WAN1JF_tBb2WxZ7RshQDQyCDwOvVywGvyOjmfGfr7LuDHc5Ui9lyuZlRFO7_Xz9jAMiQhSDPuSRe-1EFwOsTY-8p6IF");'></div>
+<div class="absolute top-3 right-3 bg-primary/80 text-white text-xs font-bold px-2 py-1 rounded-full">฿1,590</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Introduction to Machine Learning</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">เรียนรู้พื้นฐานของอัลกอริทึมและเทคนิคการเรียนรู้ของเครื่อง</p>
+<button class="w-full mt-auto px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">ดูรายละเอียด</button>
+</div>
+</div>
+<div class="bg-white/50 dark:bg-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADl7PxFiVxciJ4ov7zDLqOBoIzp1kiFs7tRFAgtU7qqf6sxgevH4xhvxRQjJbgqSV5K0aG0tRhtqCPsbT_-HwE_ZJ9dZd3idhY8Q9BZDcXspThOaYUi8HW8GtP89m343LdoMs6RZ7Sw1iqsybPw9BqSXjxg_7wxmQPE1vNAufVWwIy_2ft4A12GVLIWR49qoVjXJnopdUOLovPoQnGCx5UBE2fdx2M6gFCKvLEynL38wK_9JkG6C9VwCe6Zjg8Y3hj9DMglMDejbDq");'></div>
+<div class="absolute top-3 right-3 bg-primary/80 text-white text-xs font-bold px-2 py-1 rounded-full">฿1,790</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Deep Learning Fundamentals</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">ฝึกฝนพื้นฐานของการเรียนรู้เชิงลึกและโครงข่ายประสาทเทียม</p>
+<button class="w-full mt-auto px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">ดูรายละเอียด</button>
+</div>
+</div>
+<div class="bg-white/50 dark:bg-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlDRjazUMEfA80BlidLJiZO5fvmpdYBkKWuKd67oHlqFv2QuM4aKn6PTOOHfdrDm5ZZ3uebGm0R_tLdChy9sy_L43P63p4ojJv0PNryvbvYKOH6ikYB5Ytkg6AEy_OD_gROvwOFqjX9P6XNhfxHENppmIRhBq8RWQ5_IdqRLJaGATiMRMOqPSxosVVUUwDWJQyV7uziJ133TN8lfF0ByIZSe3JPEGXih2B1JdwHyjA3rxztT7rpukj8Yb64-OWbchRu-bDbFFekNF0");'></div>
+<div class="absolute top-3 right-3 bg-primary/80 text-white text-xs font-bold px-2 py-1 rounded-full">฿1,690</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Natural Language Processing</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">สำรวจโลกของการประมวลผลภาษาธรรมชาติและการวิเคราะห์ข้อความ</p>
+<button class="w-full mt-auto px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">ดูรายละเอียด</button>
+</div>
+</div>
+<div class="bg-white/50 dark:bg-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5-G-kXhXrIJwgWZEDYjXy1trzzM56FMvREKb2KcO0Nxbg72Fbrs-zvlRliVVvl8qGzCSxcvgfzOf-IZUxrjHjX0PoqtUMrBy2Yw9qqSmlYgeVC0AD4WmHArhseCwZTRhX9S-QZkwZfjVO9AJwm17Gr3P1H-uXkoeWiujGLhtyzZCHOOPcm2ZsBBWF6lCWokFRy4iUrHM7Dva4yvDHdLjM-twAw97Q6Z_zUROgcSREI7uxMS02ZHcSjA2YkaRhdMqbfr0y-9q8_tLd");'></div>
+<div class="absolute top-3 right-3 bg-primary/80 text-white text-xs font-bold px-2 py-1 rounded-full">฿1,890</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Computer Vision</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">เจาะลึกเทคนิคคอมพิวเตอร์วิทัศน์และการรู้จำภาพ</p>
+<button class="w-full mt-auto px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">ดูรายละเอียด</button>
+</div>
+</div>
+<div class="bg-white/50 dark:bg-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDo56QInqQUlsy_BKJbjOap7JPnhKEEsz6QPOwM13SYIJHgbXO_fKYpTwLhl9J9162FWEaXrw5r96xtisbXyrFNIHGsrrUPJX6fUnCWz4eEzHRP4YP1iOKoRIRKOtVTkILMAFpoVL827s88zaLoXmR-FTvS_vK2kvGZ8N6_9opkHT69hcGF6QY08MkNmpm0NAieJztUqVxkGc2MMIe5rR-2do9MyMkttGznciDpQSNLfC_ttfCgmK7NsKs1zE2l0z-ZmbDWR_E0zot7");'></div>
+<div class="absolute top-3 right-3 bg-primary/80 text-white text-xs font-bold px-2 py-1 rounded-full">฿2,190</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Reinforcement Learning</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">ค้นพบการเรียนรู้แบบเสริมกำลังและการประยุกต์ใช้ในหุ่นยนต์และเกม</p>
+<button class="w-full mt-auto px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">ดูรายละเอียด</button>
+</div>
+</div>
+<div class="bg-white/50 dark:bg-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIaDniz5htt6wuqjwBugrKTrIMfr4n3nZCVolCJ_kGsnFcnTNtCOZUnb9d0n84li5ITdKGwzs6wyWHH1PyYffNKpPi2hEz3gaHgsvVqaC4mnAdwfDr-dzm1agzWVyaJBUDzN8FMyBaHKcWDgKRw4TRJt_MYmsnv8ThzSw6T5_6iS9lKyf_OwwVf_Z_5_LFa0BGkfrvUQSPZICJydn194kyzrND9q2F0UXm51o85iis2b0WiZOBG6-Nd3eJlKDUeDRO2kH-C8Hqmk1f");'></div>
+<div class="absolute top-3 right-3 bg-primary/80 text-white text-xs font-bold px-2 py-1 rounded-full">฿1,290</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">AI Ethics and Society</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">ทำความเข้าใจผลกระทบทางจริยธรรมของ AI และผลกระทบต่อสังคม</p>
+<button class="w-full mt-auto px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">ดูรายละเอียด</button>
+</div>
+</div>
+<div class="bg-white/50 dark:bg-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgxyXnF20gsxPM7lwLYpFGCsSqy1sQUraS4czsLPpnrDytTHL_kadooiRktHjNOTcKtlqIqLMwV3jBs4x-NG35t073RhbC7uZt5DzxmLPcJ1xjBmrCsojsFDQRPefv9C31cvuOY4mMsC-4Cfr_g2RJISrDggQ7BJjL52UrxVLxpe8_6ro2wx0r8zQsYYjoa6v7f7L6xlgNXPo_oTeaN3RMdI-x9ytRhY0DvpQeQpU_CoKAh9ghhybPxQJoryS3_K-CpzmKOgozW8dn");'></div>
+<div class="absolute top-3 right-3 bg-primary/80 text-white text-xs font-bold px-2 py-1 rounded-full">฿2,490</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">AI for Business Strategy</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">พัฒนากลยุทธ์ AI เพื่อการเติบโตทางธุรกิจและนวัตกรรม</p>
+<button class="w-full mt-auto px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">ดูรายละเอียด</button>
+</div>
+</div>
+<div class="bg-white/50 dark:bg-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+<div class="relative">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFizY5m3rJAB6SAS4al37xAV6qoMrN_yg3qJQTo-xnoa49Y_d9hnrnctGsVJdfYpSrSp5ANEmmD4OKl2ciaEVwg5ZCfVM2Xeh6Jey4d64150p5wW76ppeFPdN2-4Mw1X66y0rfpwVBwdtioo5PMAl-OoghtlJeGVDJzL0Uqc6v9xmp4HJozD7euarBQMb6EDOW7s84cxksAzEA0peIhoe28Gyyk5A4cegBGTCMoGzK6JsZPPQWaEoiLpYuHP4ZAaaXVqdkL26b3NLn");'></div>
+<div class="absolute top-3 right-3 bg-primary/80 text-white text-xs font-bold px-2 py-1 rounded-full">฿2,990</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Advanced Machine Learning</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">สำรวจหัวข้อการเรียนรู้ของเครื่องขั้นสูง เช่น ensemble methods</p>
+<button class="w-full mt-auto px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">ดูรายละเอียด</button>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-gray-200/50 dark:border-gray-800/50">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
+<p>© 2024 AI Academy. สงวนลิขสิทธิ์.</p>
+</div>
+</footer>
+</div>
+
+</body></html>
